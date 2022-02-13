@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    max-width: 1440px;
+    border: 1px solid chocolate;
+}
+
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.left{
+    display: flex;
+    background-color: gray;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+}
+
+.right {
+    display: inline-flex;
+}
+
+.right li {
+    list-style-type: none;
+    padding: 10px;
+}
+
