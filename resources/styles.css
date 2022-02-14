@@ -4,7 +4,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     max-width: 1440px;
-    border: 1px solid chocolate;
+    /* border: 1px solid chocolate; */
 }
 
 .main-header{
@@ -16,6 +16,8 @@
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    /* background-color: rgb(188, 248, 248); */
+    
 }
 .main-header h1{
     margin-top: 30px;
@@ -52,6 +54,10 @@
     background-color: rgb(188, 248, 248);
 }
 
+.mission p, .mission h2, .info, .header-nav{
+    background-color: bisque;
+}
+
 .mission p {
     display: flex;
     justify-self: center;
@@ -60,6 +66,7 @@
     width: 100%;
     justify-content: center;
     align-items: center;
+    
 }
 
 .vision h2, .expertise h2, .experts h2, .vision p, .mission h2,.expertise-area h3 {
@@ -91,11 +98,39 @@
 
 .expertise-area h3{
     display: flex;
-    border-radius: 0 0 15px 15px;
+    /* border-radius: 0 0 15px 15px; */
     padding: 10px;
     background-color: bisque;
     height: 60px;
     align-items: center;
     justify-content: center;
+}
+
+.all-experts{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.first-three, .second-three{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.single-expert{
+    margin: 20px;
+}
+
+.expert-img{
+   width: 200px; 
+   height: 200px;
+   border-radius: 50%;
+   background-color: rgb(188, 248, 248); 
+}
+
+.info{
+    padding: 10px;
 }
 
