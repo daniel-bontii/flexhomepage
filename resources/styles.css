@@ -3,8 +3,20 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    max-width: 1440px;
+    scroll-behavior: smooth;
     /* border: 1px solid chocolate; */
+}
+
+body{
+    margin: 0 auto;
+    max-width: 1440px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+p {
+    font-size: 1.5rem;
 }
 
 .main-header{
@@ -13,6 +25,11 @@
 }
 
 .header-nav{
+    position: fixed;
+    width: 100%;
+}
+
+.header-nav, .footer-nav{
     display: flex;
     justify-content: space-between;
     padding: 10px;
@@ -20,21 +37,28 @@
 }
 
 .main-header h1{
-    margin-top: 30px;
+    margin-top: 100px;
     text-align: center;
     text-transform: uppercase;
 }
 
 .left{
     display: flex;
-    background-color: gray;
+    background-color: #D7FBE8;
     width: 50px;
     /* height: 50px; */
     height: auto;
     border-radius: 50%;
     justify-content: center;
     align-items: center;
-    color: #fff;
+}
+
+.left a{
+    text-decoration: none;
+    color: #1fab89;
+    cursor: pointer;
+    font-weight: bold;
+
 }
 
 .right {
@@ -45,6 +69,17 @@
     list-style-type: none;
     padding: 10px;
     color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    
+}
+
+.right a {
+    text-decoration: none;
+}
+
+.right li:hover{
+    color: black
 }
 
 .mission{
@@ -61,13 +96,16 @@
 }
 
 
+
 .mission p, .mission h2, .info{
     background-color: rgba(157, 243, 196, 0.9);
     color: #fff;
 }
 
  .info{
-    background-color: bisque;
+    background-color: #9DF3C4;
+    text-align: center;
+    color: rgb(0, 0, 0);
 }
 
 .mission p {
@@ -78,7 +116,14 @@
     width: 100%;
     justify-content: center;
     align-items: center;
+    /* margin: 0 auto; */
+    text-align: center;
     
+}
+
+.vision p{
+    width: 60%;
+    margin: 40px auto 0 ;
 }
 
 .vision h2, .expertise h2, .experts h2, .vision p, .mission h2,.expertise-area h3 {
@@ -127,11 +172,16 @@
     margin-top: 100px;
 }
 
+.experts h2{
+    margin-top: 100px;
+}
+
 .all-experts{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-top: 50px;
 }
 
 .first-three, .second-three{
@@ -159,5 +209,12 @@
 }
 .info{
     padding: 10px;
+}
+
+.copyright{
+    text-align: center;
+    background-color: #1FAB89;
+    padding: 10px;
+    font-weight: bold;
 }
 
